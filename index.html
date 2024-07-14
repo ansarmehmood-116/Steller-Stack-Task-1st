@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task.css">
+    <title>Document</title>
+</head>
+<body>
+ <div class="container">
+    <div class="first">
+      <nav id="nav">
+        <a class="a" href="#">About Us</a>
+        <a class="a" href="#">How it works</a>
+        <a class="a" href="#">Pricing</a>
+        <a class="a" href="#">FAQs</a>
+      </nav> 
+    </div>
+    <div class="second">
+    <a class="a" href="#">Login</a>
+    <button class="b">Sign-UP</button>
+    </div>
+</div>
+<div class="container2">
+ <div id="third">
+    <h1>Always track and analyse your business Statistics to success</h1>
+    <p>A better way to manage your sales team,clients and marketing-on a single platform,powerfull,affordable and easy.</p><br>
+    <input class="input1" type="email" placeholder="Enter your email">
+    <input class="input2" type="button" value="Get started">
+ </div>
+ <div id="img">
+    <img src="Capture.PNG" alt="sorry">
+ </div>
+</div>
+
+<div class="container3">
+ <div id="fourth" onclick="ChnageColor1()">
+    <sup class="fifth">$</sup><span class="price">49</span><b>per month</b><br>
+    <p class="fifth" class="line1">A pay once license just for you</p>
+    <ul>
+    <li class="li">The mac app-yours to keep</li><br>
+    <li class="li">Beautiful_white Level</li><br>
+    <li class="li">One year of saving to cloud</li>
+    <button class="button1" id="btn1">Join</button>
+    </ul>
+ </div>
+ <div id="fifth" onclick="ChnageColor2()">
+    <sup class="sixth">$</sup><span class="price">99</span><b>per month</b><br>
+    <p class="sixth" class="line1">Pro account, just for you</p>
+    <ul>
+        <li>The Mac app — yours to keep</li><br>
+        <li>One year of Mac app updates</li><br>
+        <li>One year of saving to Cloud</li><br>
+        <li>A personal Cloud workspace</li><br>
+        <li>All tools, just for you</li><br>
+    </ul>
+    <button class="button2" id="btn2">Join</button>
+ </div>
+ <div id="sixth" onclick="ChnageColor3()">
+    <sup class="seventh">$</sup><span class="price">299</span><b>per month</b><br>
+    <p class="seventh" class="line1">A subscription for the whole team</p>
+    <ul>
+        <li>Access to the Mac app for all</li><br>
+        <li>A shared Cloud workspace</li><br>
+        <li>One year of saving to Cloud</li><br>
+        <li>Easy team management</li><br>
+        <li>No license key required</li><br>
+    </ul>
+    <button class="button3" id="btn3">Join</button>
+ </div>
+</div>
+
+<script>
+   count=0;
+   function ChnageColor1(){
+      var w=document.getElementById('fourth');
+      var w1=document.getElementById('btn1');
+      if(count==0){
+        w.style.color="white";
+        w.style.backgroundColor="black";
+        w1.style.color="black";
+        w1.style.backgroundColor="white";
+        count++;
+      }
+      else{
+        w.style.color="black";
+        w.style.backgroundColor="white";
+        w1.style.color="white";
+        w1.style.backgroundColor="black";
+        count=0;
+      }
+   }
+
+   function ChnageColor2(){
+      var x=document.getElementById('fifth');
+      var x1=document.getElementById('btn2');
+      if(count==0){
+        x.style.color="black";
+        x.style.backgroundColor="white";
+        x1.style.color="white";
+        x1.style.backgroundColor="black";
+        count++;
+      }
+      else{
+        x.style.color="white";
+        x.style.backgroundColor="black";
+        x1.style.color="black";
+        x1.style.backgroundColor="white";
+        count=0;
+      }
+   }
+
+   function ChnageColor3(){
+      var y=document.getElementById('sixth');
+      var y1=document.getElementById('btn3');
+      if(count==0)
+      {
+        y.style.color="white";
+        y.style.backgroundColor="black";
+        y1.style.color="black";
+        y1.style.backgroundColor="white";
+        count++;
+      }
+      else
+      {
+        y.style.color="black";
+        y.style.backgroundColor="white";
+        y1.style.color="white";
+        y1.style.backgroundColor="black";
+        count=0;
+      }
+   }
+</script>
+</body>
+</html>
